@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Husnexa",
+  "version": "1.0.0",
+  "description": "Adds a download button to YouTube videos. Requires the free Husnexa desktop app for Windows.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsgkmw95WgWc2qMuSJ75KiNDCU2xAN7cF7lZ0/0Cim7qpR5DRTzPlOCmsAzAqnUsEMzH4FRk4a6hy7nXtPBOTQc/GMtAmZ0EFu5e76PuGFEoqDmMNVTfZb6XpCNscSwFe9KbYxXu8I9S89GHInIl9LxKqk1alF0w9pek+IgxU9DuUmdcFgWflcsuAaoHoKgXHRsQFTmm19EN4wBaj/kgbDwdz455PZMznErgn1MwkFgvvGWKy+56Ji4RVrGz14ax6K4CUd5WnOfF6eVJOClsuWEWCLPfHj3YYyrk+bQPwqijKPt+YBRbTZ9+/7RNNzdTXHaZaorA6ZSbcb8ID7YJbKwIDAQAB",
+  "permissions": ["nativeMessaging", "cookies"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "extension@husnexa",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["authenticationInfo", "browsingActivity"]
+      }
+    }
+  }
+}
