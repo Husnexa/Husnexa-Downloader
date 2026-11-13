@@ -1,0 +1,17 @@
+Husnexa - Release Notes & Build History
+=======================================================
+
+[2026-10-24 01:15] v1.0.0: Initial release baseline
+[2026-10-24 01:18] v1.0.0: Baseline 1.0.0
+[2026-10-24 01:20] v1.0.1: Release 1.0.1 with self-updating engine
+[2026-10-24 07:29] v1.0.2: Added curl_cffi browser impersonation to fix Pixabay Cloudflare 403 error
+[2026-10-24 07:58] v1.0.3: Added post-download action bar, quality file size badges, smart clipboard auto-detect, recent downloads history drawer, and refined minimal typography
+[2026-10-24 08:19] v1.0.4: Fix format tab active glider visibility on analysis and window resize
+[2026-10-24 21:29] v1.0.5: Fix 15-20s startup freeze, pywebview reflection lock, Win32 clipboard, and concurrent update checks
+[2026-10-24 22:15] v1.0.6: Fixed batch queue status updates, eliminated redundant post-download network calls, debloated ~45MB PyInstaller bundle, added IPC throttling, persistent settings, clip trimmer, M4A audio, one-click browser cookies, batch resolution cap, and history item deletion
+[2026-10-30 07:27] v1.0.7: Security hardening (SHA-256 verified yt-dlp and installer updates, zip-slip protection), fixed audio metadata embedding, bulk embed options, playlist/mix URL detection, cancel cleanup, reliable final-file detection, atomic history, and unit tests
+[2026-11-01 13:54] v1.0.8: Security fixes (escaped remote text, CSP, verified installer launch, removed update hash bypass, removed stray cookies.txt copy), restored browser cookies, fixed start-only clips and playlist expansion on list= links, bundled yt-dlp-ejs and Deno for YouTube
+[2026-11-01 15:22] v1.1.0: Download queue, single running copy, automatic sign-in retry with plain error messages, and a YouTube download button through a bundled browser extension
+[2026-11-12 01:25] v1.1.1: Fixed downloads freezing and the app staying stuck after restart; ready for the next link right after a download finishes.
+[2026-11-12 19:41] v1.2.0: Paste or drop a link to analyze it instantly, clearer Start button and sign-in status, and a Recent downloads panel on the main screen.
+[2026-11-12 20:13] v1.2.1: Finished downloads show their real size, the Update button says what is new, and closing mid-download no longer leaves partial files behind.

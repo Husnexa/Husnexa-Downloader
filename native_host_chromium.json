@@ -1,0 +1,7 @@
+{
+  "name": "com.husnexa.host",
+  "description": "Husnexa browser helper",
+  "path": "Husnexa Helper.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://ohmpahchleninhlecnlfonifnnplkkhj/"]
+}
