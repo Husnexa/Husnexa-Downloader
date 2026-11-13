@@ -52,8 +52,8 @@ See the [privacy policy](docs/PRIVACY.md) for how the extension handles your dat
 Needs Windows and Python 3.10+.
 
 ```bash
-git clone https://github.com/husnexa/husnexa.git
-cd husnexa
+git clone https://github.com/husnexa/Husnexa-Downloader.git
+cd Husnexa-Downloader
 pip install -r requirements.txt
 python app.py
 ```
